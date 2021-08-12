@@ -1,0 +1,16 @@
+body {
+    --twitter-color : #50b7f5;
+    --twitter-background: #e6ecf0;
+}
+
+.app {
+    display: flex;
+    /* view height stretches the border to entire height of the screen */
+    height: 100vh;
+    /* occupy full width of larg screens as well */
+    max-width: 1300px;
+    /* centering the whole app */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
