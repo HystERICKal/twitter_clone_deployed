@@ -8,7 +8,7 @@ import FlipMove from "react-flip-move";
 function Feed() {
     //useState([]) is a hook and it prepares the variable. default value is an empty array
     const [posts, setPosts] = useState([]);
-    const snaps=[]
+    // const snaps=[]
     //runs based on a given condition
     //run when the feed component loads, and don't run it again after
     useEffect(() => {

@@ -1,6 +1,6 @@
 // /* global doc */
 import { Avatar } from '@material-ui/core'
-import React, { forwardRef, useEffect, useState } from 'react'
+import React, { forwardRef } from 'react'
 import "./Post.css"
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser"
 import { ChatBubbleOutline, FavoriteBorder, DeleteOutlined, Repeat } from '@material-ui/icons'
@@ -21,7 +21,7 @@ const Post = forwardRef(({
 
     // const [allDocs, setAllDocs] = useState([]);
     // const db = firebase.firestore()
-    const [singleDoc, setsingleDoc] = useState({});
+    // const [singleDoc, setsingleDoc] = useState({});
 
     // function fetchAll() {
     //     db.collection('posts')
@@ -36,21 +36,21 @@ const Post = forwardRef(({
     //             }
     //         });
     // }
-    const fetchSingle = e =>{
-        // e.preventDefault();
-        db.collection('posts')
-        .doc("8AcD8Zrjy43I6tBUJh8M")
-        .get()
-        .then((snapshot)=>{
-            if(snapshot){
-                setsingleDoc(snapshot.data());
-            }
-        });
-    }
-    useEffect(() => {
-        // fetchAll();
-        ///fetchSingle();
-    }, []);
+    // const fetchSingle = e =>{
+    //     // e.preventDefault();
+    //     db.collection('posts')
+    //     .doc("8AcD8Zrjy43I6tBUJh8M")
+    //     .get()
+    //     .then((snapshot)=>{
+    //         if(snapshot){
+    //             setsingleDoc(snapshot.data());
+    //         }
+    //     });
+    // }
+    // useEffect(() => {
+    //     // fetchAll();
+    //     ///fetchSingle();
+    // }, []);
 
     const deleteDoc = (event) => {
         // id.preventDefault();
