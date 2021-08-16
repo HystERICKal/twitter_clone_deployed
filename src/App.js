@@ -2,8 +2,9 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import Feed from "./Feed";
 import "./App.css";
-import Widgets from "./Widgets"
-// import firebase from "firebase/app"
+import Widgets from "./Widgets";
+import 'react-toastify/dist/ReactToastify.css';
+// import firebase from "firebase"
 
 function App() {
   return (

@@ -3,18 +3,18 @@ import "./TweetBox.css"
 import {Avatar, Button} from "@material-ui/core";
 import db from "./firebase";
 
-function TweetBox() {
+ function TweetBox() {
     //Two pieces of state, to keep track of what user is posting
     const [tweetMessage, setTweetMessage] = useState("");
     const [tweetImage, setTweetImage] = useState("");
 
     //tweet button
-    const sendTweet = e => {
+    const sendTweet = async e => {
         //prevent page from refreshing everytime you tweet
         e.preventDefault();
 
         //post to database
-        db.collection('posts').add({
+        let id = await db.collection('posts').add({
             displayName: 'Erick Nyoro',
             username: '@erick_nyoro',
             verified: true,
@@ -22,6 +22,7 @@ function TweetBox() {
             image: tweetImage,
             avatar: "https://lh3.googleusercontent.com/ogw/ADea4I5OeipD_9Tk2q7g6xvEcQ9COoxpNybCVOLG69Gn7g=s32-c-mo",
         });
+        console.log(id)
 
         //remove tweet and image from input fields after post
         setTweetMessage("");
