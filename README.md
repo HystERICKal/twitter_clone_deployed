@@ -1,4 +1,4 @@
-# [CLICK HERE TO VIEW LIVE SITE!!:wink::wink:](https://not-twitter.netlify.app/)  
+# [CLICK HERE TO VIEW LIVE SITE!!:wink::point_left:](https://not-twitter.netlify.app/)  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
